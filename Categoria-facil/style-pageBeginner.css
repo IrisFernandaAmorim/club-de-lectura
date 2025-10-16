@@ -1,0 +1,125 @@
+/* flower background */
+body {
+  background-image: url('/Assets/background-pageBegginer.jpg'); /* Use your flower image */
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Container for the open-book layout */
+.book-scene {
+  background-image: url('/Assets/vector-libroAbierto-2.png'); /* Use your book image */
+  position: relative;
+  width: 1700px;
+  height: 1113px;
+  margin: -50px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* PNG open-book image */
+.book-bg {
+  width: 100%;
+  height: auto;
+  display:block;
+}
+
+/* Left and right pages positioned over the PNG */
+.page {
+  position: absolute;
+  top: 15%;
+  width: 42%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Adjust placement for each page */
+.left-page {
+  left: 15%;
+  width: 550px;
+
+}
+
+.right-page {
+  right: 14%;
+  width: 550px;
+}
+
+/* Book cards (each book item) */
+.book-card {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 10px;
+  padding:20px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease;
+}
+
+.book-card:hover {
+  transform: scale(1.03);
+}
+
+/* Book cover images */
+.book-card img {
+  max-height: 200px;
+  object-fit: cover;
+  border-radius:10px;
+}
+
+/* Buttons */
+.buttons {
+  margin-top: 8px;
+}
+
+.buttons button {
+  border: none;
+  border-radius: 15px;
+  padding: 6px 14px;
+  margin: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.2s ease;
+}
+
+.buttons button:hover {
+  transform: scale(1.1);
+}
+
+/* Button colors */
+.summary{
+  background-color: rgb(224, 210, 199);
+}
+.to-read {
+  background-color: #7ae89d;
+}
+
+.finished {
+  background-color: #f7b3b3;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  .page {
+    width: 80%;
+    position: static;
+  }
+
+  .book-scene {
+    flex-direction: column;
+  }
+
+  .book-bg {
+    display: none;
+  }
+
+  body {
+    background-color: #fff;
+  }
+}
