@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style-index.css">
 </head>
 <body>
+    <!---MENU NAVEGACION-->
      <header>
         <nav>
             <ul class="nav-menu">
@@ -17,8 +18,26 @@
         </nav>
     </header>
     
-    <div class="book-cover">
-        <img src="/Assets/livro-cerrado.png" alt="book closed">
+    <!-- CONTAINER DEL LIBRO-->
+    <div class="book-container">
+    <!--IMAGEN DEL LIBRO CERRADO-->
+         <div class="book-cover">
+             <img src="/Assets/livro-cerrado.png" alt="book closed">
+        </div>
+
+    <!-- TITULO DEL LIBRO-->
+         <div class="book-content">
+            <h1>FLORECIENDO <br> JUNTAS</h1> 
+         <!-- BOTONES DE LAS CATEGORIAS -->
+            <div class="categories-buttons">
+                <button onclick="window.location.href='/Categoria-facil/pageBeginner.html'">FACIL</button>
+                <button onclick="window.location.href='/Categoria-medio/pageIntermediate.html'">MEDIO</button>
+                <button onclick="window.location.href='/Categoria-experto/pageExpert.html'">EXPERT</button>
+            </div>
+        </div>
     </div>
+
+    <script src="script.js"></script>
+    
 </body>
 </html>

@@ -9,6 +9,12 @@ body {
   overflow-x: hidden;
 }
 
+/* navigation to inicio */
+.nav-inicio {
+  padding: 25px;
+  text-decoration: underline;
+}
+
 /* Container for the open-book layout */
 .book-scene {
   background-image: url('/Assets/vector-libroAbierto-2.png'); /* Use your book image */
@@ -96,14 +102,28 @@ body {
 .summary{
   background-color: rgb(224, 210, 199);
 }
-.to-read {
-  background-color: #7ae89d;
+.btn-toggle{
+  background-color: rgb(97, 212, 134);
 }
 
-.finished {
-  background-color: #f7b3b3;
+.btn-state {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 0.5rem;
 }
-
+.btn-read,
+.btn-unread {
+  border: none;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.btn-read {
+  background-color: #A8E6A3;
+}
+.btn-unread {
+  background-color: #F2A5A5;
+}
 /* Responsive layout for smaller screens */
 @media (max-width: 768px) {
   .page {
