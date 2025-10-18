@@ -1,3 +1,118 @@
-
-
+*{
+  margin: 0;
+  padding: 0;
+  max-height: 600px;
  
+  
+}
+body{
+  /* Imagem de fundo */
+  background-image: url('/Assets/bg-principal.png');
+  background-position: center center; /* Centraliza horizontal e verticalmente */
+  background-repeat: no-repeat; /* Evita repetição */
+  background-size: cover; /* Garante que a imagem cubra o container */
+  background-attachment: fixed; /* Mantém o fundo fixo em desktops */
+}
+
+ @media (max-width: 768px) {
+  body {
+    background-size: contain; /* Mantém a proporção em telas menores */
+    background-attachment: scroll; /* Evita problemas em mobile */
+  }
+}
+
+/*Este es el menu navegacion*/
+
+header{
+    background-color: rgb(77, 77, 80);
+    opacity: 50%;
+    padding: 1em 0;
+    text-align: center;
+}
+.nav-menu{
+    list-style: none;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.nav-menu li{
+    margin: 10px 15px;
+    padding: 5px;
+    transition: 0.4s;
+    border-radius: 5px;
+    
+}
+.nav-menu li:hover{
+    background-color:#ca508d;
+    font-size: 20px;
+}
+.nav-menu a{
+    text-decoration: none;
+    display: inline-block;
+    color: #ffffff;
+    opacity: 100%;
+    font-size: 40px;
+    font-weight: bold;
+}
+/* Contenido del libro */
+.contenedor{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  margin: auto;
+  position: relative;
+}
+.book-cover img {
+  width: 28vw;
+  height: 100vh;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+}
+/* Aqui controlamos o conteúdo da capa (título + botões) */
+.book-content{
+  position: absolute;
+  top: 10%; /* ajusta para subir/descer o título */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column; /* título e botões empilhados */
+  align-items: center;
+  text-align: center;
+  color: #9B034F;
+  width:50vw;
+}
+/* Título */
+h2 {
+  margin: 0;
+  color: 6b5366;
+  font-size: 3em;
+  line-height: 1.2em;
+  font-family:Arial, Helvetica, sans-serif;
+  margin-bottom:0.5em;
+}
+
+p{ width: 40%; /* el texto ocupa solo el 80% del contenedor */  
+    text-align: center; /* centra el texto dentro de ese ancho*/    
+    margin: 0 auto; 
+    text-align: justify; 
+    text-justify: inter-word; /* melhora a distribuição do espaçamento */ 
+    line-height: 1.6; /* aumenta o espaçamento entre linhas */ 
+}
+
+footer{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ color: white;          /* texto blanco */
+ background: transparent; /* o podés darle un color si querés un fondo */
+ padding: 5px 0;       /* espacio arriba y abajo */
+ margin-top: -2px;
+ right:-6%;
+ position: relative;
+}

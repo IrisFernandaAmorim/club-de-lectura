@@ -55,7 +55,6 @@ header{
     font-family:Arial, Helvetica, sans-serif;
 }
 
-
 .book-container {
   display: flex;
   justify-content: center;
@@ -121,4 +120,16 @@ h1 {
 
 .categories-buttons button:hover {
   background-color:#9b034f;
+}
+
+footer{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ color: white;          /* texto blanco */
+ background: transparent; /* o podés darle un color si querés un fondo */
+ padding: 5px 0;       /* espacio arriba y abajo */
+ margin-top: -2px;
+ right:-1%;
+ position: relative;
 }
