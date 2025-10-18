@@ -20,24 +20,9 @@ body{
     background-attachment: scroll; /* Evita problemas em mobile */
   }
 }
-.book-cover{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    overflow: hidden;
-    height: 100vh;
-    margin: auto;
-    margin-top: 40px;
-    object-fit: cover;
-    
-}
-.book-cover img{
-    margin-top: 30px;
-    padding: 0;
-    width: 25vw;
-    height: 100vh;
-}
+
+/*Este es el menu navegacion*/
+
 header{
     background-color: rgb(77, 77, 80);
     opacity: 50%;
@@ -71,3 +56,65 @@ header{
     font-size: 40px;
     font-weight: bold;
 }
+/* Contenido del libro */
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  margin: auto;
+  position: relative;
+}
+.book-cover img {
+  width: 28vw;
+  height: 100vh;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+}
+/* Aqui controlamos o conteúdo da capa (título + botões) */
+.book-content {
+  position: absolute;
+  top: 10%; /* ajusta para subir/descer o título */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column; /* título e botões empilhados */
+  align-items: center;
+  text-align: center;
+  color: #9B034F;
+  width:50vw;
+}
+/* Título */
+h2 {
+  margin: 0;
+  color: 6b5366;
+  font-size: 3em;
+  line-height: 1.2em;
+  font-family:Arial, Helvetica, sans-serif;
+  margin-bottom:0.5em;
+}
+
+p{
+  width: 40%;            /* el texto ocupa solo el 80% del contenedor */
+  text-align: justify;    /* centra el texto dentro de ese ancho */
+  margin: 0 auto; 
+  text-justify: inter-word; /* melhora a distribuição do espaçamento */
+  line-height: 1.6; /* aumenta o espaçamento entre linhas */
+}
+
+footer{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ color: white;          /* texto blanco */
+ background: transparent; /* o podés darle un color si querés un fondo */
+ padding: 5px 0;       /* espacio arriba y abajo */
+ margin-top: -2px;
+ right:-6%;
+ position: relative;
+}
+
+ 
