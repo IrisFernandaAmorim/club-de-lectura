@@ -1,86 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Categoría Experto - Club de Lectura</title>
-  <link rel="stylesheet" href="style-pageExpert.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Club de Lectura - Categoría Fácil</title>
+  <link rel="stylesheet" href="style-pageExpert.css">
 </head>
 <body>
-  <header>
-    <h1>📚 Categoría Experto</h1>
-    <p>Libros para lectores avanzados</p>
-  </header>
-
-  <main>
-    <section class="books">
-      <!-- Book 1 -->
-      <div class="book" data-id="1984">
-        <img src="../Assets/1984.jpg" alt="1984" />
-        <h2>1984</h2>
-        <p class="author">George Orwell</p>
-         <p class="description">La novela popularizó los conceptos del omnipresente y vigilante Gran Hermano o Hermano Mayor, de la notoria habitación 101, de la ubicua policía del Pensamiento y de la neolengua, adaptación del idioma inglés en la que se reduce y se transforma el léxico con fines represivos, basándose en el principio de que lo que no forma parte de la lengua, no puede ser pensado.</p>
-        <div class="state">
-          <button class="btn-toggle">Por leer 📖</button>
+  <div class="book-scene">
+     <!--openbook image-->
+    
+      <!-- Left Page -->
+      <div class="page left-page">
+        <div class="book-card">
+          <img src="/Assets/1984.jpg" alt="1984">
+          <p><strong>1984</strong><br>George Orwell</p>
+          <div class="buttons">
+            <button class="summary" data-link="https://es.wikipedia.org/wiki/1984_(novela)">Ver resumen</button>
+            <button class="btn-toggle">Por leer 📖</button>
+          </div>
         </div>
-        <div class="comments">
-          <textarea placeholder="Escribe tu comentario..."></textarea>
-          <button class="comment-send">Enviar</button>
-          <ul class="comment-list"></ul>
-        </div>
-      </div>
-
-      <!-- Book 2 -->
-      <div class="book" data-id="nombre-de-la-rosa">
-        <img src="../Assets/El nombre de la rosa.jpg" alt="El nombre de la rosa" />
-        <h2>El nombre de la rosa</h2>
-        <p class="author">Umberto Eco</p>
-         <p class="description">Ambientada en el turbulento ambiente religioso del siglo XIV, la novela narra la investigación que realizan fray Guillermo de Baskerville y su pupilo Adso de Melk alrededor de una misteriosa serie de crímenes que suceden en una abadía del norte de Italia.</p>
-        <div class="state">
-          <button class="btn-toggle">Por leer 📖</button>
-        </div>
-        <div class="comments">
-          <textarea placeholder="Escribe tu comentario..."></textarea>
-          <button class="comment-send">Enviar</button>
-          <ul class="comment-list"></ul>
+        <div class="book-card">
+          <img src="/Assets/El nombre de la rosa.jpg" alt="El nombre de la rosa">
+          <p><strong>El nombre de la rosa</strong><br>Umberto Eco</p>
+          <div class="buttons">
+            <button class="summary" data-link="https://es.wikipedia.org/wiki/El_nombre_de_la_rosa">Ver resumen</button>
+            <button class="btn-toggle">Por leer 📖</button>
+          </div>
         </div>
       </div>
 
-      <!-- Book 3 -->
-      <div class="book" data-id="ficciones">
-        <img src="../Assets/Ficciones.jpg" alt="Ficciones" />
-        <h2>Ficciones</h2>
-        <p class="author">Jorge Luis Borges</p>
-        <p class="description">Ficciones es un libro de cuentos escrito por Jorge Luis Borges, publicado en 1944 y compuesto de dos partes: El jardín de senderos que se bifurcan y Artificios; posee dos prólogos.</p>
-        <div class="state">
-          <button class="btn-toggle">Por leer 📖</button>
+      <!-- Right Page -->
+      <div class="page right-page">
+        <div class="book-card">
+          <img src="/Assets/Ficciones.jpg" alt="Ficciones">
+          <p><strong>Ficciones</strong><br>Jorge Luis Borges</p>
+          <div class="buttons">
+            <button class="summary" data-link="https://es.wikipedia.org/wiki/Ficciones">Ver resumen</button>
+            <button class="btn-toggle">Por leer 📖</button>
+          </div>
         </div>
-        <div class="comments">
-          <textarea placeholder="Escribe tu comentario..."></textarea>
-          <button class="comment-send">Enviar</button>
-          <ul class="comment-list"></ul>
-        </div>
-      </div>
-
-      <!-- Book 4 -->
-      <div class="book" data-id="ruido-y-la-furia">
-        <img src="../Assets/El ruido y la furia.jpg" alt="El ruido y la furia" />
-        <h2>El ruido y la furia</h2>
-        <p class="author">William Faulkner</p>
-        <p class="description">Una obra maestra de Faulkner sobre la decadencia familiar contada con el innovador monólogo interior.</p>
-        <div class="state">
-          <button class="btn-toggle">Por leer 📖</button>
-        </div>
-        <div class="comments">
-          <textarea placeholder="Escribe tu comentario..."></textarea>
-          <button class="comment-send">Enviar</button>
-          <ul class="comment-list"></ul>
+        <div class="book-card">
+          <img src="/Assets/El ruido y la furia.jpg" alt="El ruido y la furia">
+          <p><strong>El ruido y la furia</strong><br>William Faulkner</p>
+          <div class="buttons">
+            <button class="summary" data-link="https://es.wikipedia.org/wiki/El_ruido_y_la_furia">Ver resumen</button>
+            <button class="btn-toggle">Por leer 📖</button>
+          </div>
         </div>
       </div>
-
-    </section>
-  </main>
+    </div>
+  </div>
 
   <script src="script-pageExpert.js"></script>
 </body>
+<a href="../index.html" class="back-home">← Volver al inicio</a>
 </html>

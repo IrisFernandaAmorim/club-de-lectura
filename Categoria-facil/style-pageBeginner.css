@@ -100,7 +100,7 @@ body {
   background-color: #61d486;
 }
 
-* === button === *
+/* Read/Unread state buttons */
 .state {
   display: flex;
   justify-content: space-around;
