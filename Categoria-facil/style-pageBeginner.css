@@ -13,7 +13,7 @@ body {
 .back-home {
   position: fixed;
   left: 18px;
-  top: 0px;
+  top: 18px;
   background: transparent;
   padding: 10px 14px;
   border-radius: 8px;
