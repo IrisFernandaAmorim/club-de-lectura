@@ -9,11 +9,24 @@ body {
   overflow-x: hidden;
 }
 
-/* navigation to inicio */
-.nav-inicio {
-  padding: 25px;
-  text-decoration: underline;
+/* back home button */
+.back-home {
+  position: fixed;
+  left: 18px;
+  top: 0px;
+  background: transparent;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  z-index: 1000;
 }
+
+.back-home:hover { 
+  background: transparent;
+  background: rgba(255, 255, 255, 0.4);
+ }
 
 /* Container for the open-book layout */
 .book-scene {
