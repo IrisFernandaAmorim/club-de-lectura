@@ -2,8 +2,6 @@
   margin: 0;
   padding: 0;
   max-height: 600px;
- 
-  
 }
 body{
   /* Imagem de fundo */
@@ -20,29 +18,13 @@ body{
     background-attachment: scroll; /* Evita problemas em mobile */
   }
 }
-.book-cover{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    overflow: hidden;
-    height: 100vh;
-    margin: auto;
-    margin-top: 40px;
-    object-fit: cover;
-    
-}
-.book-cover img{
-    margin-top: 30px;
-    padding: 0;
-    width: 25vw;
-    height: 100vh;
-}
+
 header{
     background-color: rgb(77, 77, 80);
     opacity: 50%;
     padding: 1em 0;
     text-align: center;
+    margin-bottom: 40px;
 }
 .nav-menu{
     list-style: none;
@@ -70,4 +52,73 @@ header{
     opacity: 100%;
     font-size: 40px;
     font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+.book-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  margin: auto;
+  position: relative;
+}
+
+.book-cover img {
+  width: 28vw;
+  height: 100vh;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+}
+
+/* Aqui controlamos o conteúdo da capa (título + botões) */
+.book-content {
+  position: absolute;
+  top: 20%; /* ajusta para subir/descer o título */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column; /* título e botões empilhados */
+  align-items: center;
+  text-align: center;
+  color: #9b034f;
+}
+
+/* Título */
+h1 {
+  margin: 0;
+  color: 6b5366;
+  font-size: 4em;
+  line-height: 1.2em;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Botões */
+.categories-buttons {
+  display: flex;
+  flex-direction: column; /* coloca os botões em coluna */
+  align-items: center;
+  gap: 10px;
+  margin-top: 40px; /* espaço entre título e botões */
+}
+
+.categories-buttons button {
+  background-color: #eca9c8;
+  color: #352e30;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 150px; /* largura fixa opcional */
+}
+
+.categories-buttons button:hover {
+  background-color:#9b034f;
 }
