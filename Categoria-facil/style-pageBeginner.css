@@ -9,6 +9,12 @@ body {
   overflow-x: hidden;
 }
 
+/* navigation to inicio */
+.nav-inicio {
+  padding: 25px;
+  text-decoration: underline;
+}
+
 /* Container for the open-book layout */
 .book-scene {
   background-image: url('/Assets/vector-libroAbierto-2.png'); /* Use your book image */
@@ -97,11 +103,10 @@ body {
   background-color: rgb(224, 210, 199);
 }
 .btn-toggle{
-  background-color: #61d486;
+  background-color: rgb(97, 212, 134);
 }
 
-* === button === *
-.state {
+.btn-state {
   display: flex;
   justify-content: space-around;
   margin-top: 0.5rem;

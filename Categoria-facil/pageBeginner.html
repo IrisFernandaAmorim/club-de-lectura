@@ -7,25 +7,31 @@
   <link rel="stylesheet" href="style-pageBeginner.css">
 </head>
 <body>
+  <!--navigation to inicio-->
+  <h1 class="nav-inicio"><a href="../Pagina-inicio/index.html">Inicio</a></h1>
   <div class="book-scene">
      <!--openbook image-->
-    
+
       <!-- Left Page -->
       <div class="page left-page">
         <div class="book-card">
           <img src="/Assets/el_principito_cover.jpg" alt="El Principito">
           <p><strong>El Principito</strong><br>Antoine de Saint-Exupéry</p>
           <div class="buttons">
-            <button class="summary">Ver resumen</button>
-            <button class="btn-toggle">Por leer 📖</button>
+            <button class="summary">
+              <a href="https://www.planetadelibros.com/libro-el-principito/424236" target="_blank">Ver resumen</a>
+            </button>
+            <button class="btn-toggle" onclick="toggle(this)">Por leer 📖</button>
           </div>
         </div>
         <div class="book-card">
           <img src="/Assets/alquimistay_.jpg" alt="El Alquimista">
           <p><strong>El Alquimista</strong><br>Paulo Coelho</p>
           <div class="buttons">
-            <button class="summary">Ver resumen</button>
-            <button class="btn-toggle">Por leer 📖</button>
+            <button class="summary">
+              <a href="https://www.planetadelibros.com/libro-el-alquimista/200659" target="_blank">Ver resumen</a>
+            </button>
+            <button class="btn-toggle" onclick="toggle(this)">Por leer 📖</button>
           </div>
         </div>
       </div>
@@ -36,22 +42,26 @@
           <img src="/Assets/agatha_.jpg" alt="Agatha Christie">
           <p><strong>El Misterio De Tren Azul</strong><br>Agatha Christie</p>
           <div class="buttons">
-            <button class="summary">Ver resumen</button>
-            <button class="btn-toggle">Por leer 📖</button>
+            <button class="summary">
+              <a href="https://www.planetadelibros.com/libro-el-misterio-del-tren-azul/334632" target="_blank">Ver resumen</a>
+            </button>
+            <button class="btn-toggle" onclick="toggle(this)">Por leer 📖</button>
           </div>
         </div>
         <div class="book-card">
           <img src="/Assets/gato.jpg" alt="Te Receto un Gato">
           <p><strong>Te Receto Un Gato</strong><br>Syou Ishida</p>
           <div class="buttons">
-            <button class="summary">Ver resumen</button>
-            <button class="btn-toggle">Por leer 📖</button>
+            <button class="summary">
+              <a href="https://www.planetadelibros.com/libro-te-receto-un-gato/414204" target="_blank">Ver resumen</a>
+            </button>
+            <button class="btn-toggle" onclick="toggle(this)">Por leer 📖</button>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <script src="script.js"></script>
+  <script src="script-pageBeginner.js"></script>
 </body>
 </html>
