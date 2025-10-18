@@ -17,8 +17,36 @@
         </nav>
     </header>
     
-    <div class="book-cover">
+      <!--contenedor padre--> 
+        <main class="login-container">
+        <!--imagen del libro-->
+        <div class="book-cover">
         <img src="/Assets/livro-cerrado.png" alt="book closed">
     </div>
+    <!--contenido del libro-->
+       
+        
+        <div class="login-card">
+            <h2>Inicia Sesión</h2>
+            <form id="loginForm">
+                <label for="username">Nombre de usuario</label>
+                <input type="text" id="username" name="username" placeholder="Tu nombre...">
+
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" placeholder="Tu contraseña...">
+
+                <button type="submit">Entrar</button>
+            </form>
+            <p class="mensaje-error" id="mensajeError"></p>
+        </div>
+        
+      </div>
+    
+  </main>
+
+  <footer>
+    <p>© 2025 Floreciendo Juntas | Hecho con 💜 por mujeres para mujeres</p>
+  </footer>
 </body>
 </html>
+

@@ -20,24 +20,9 @@ body{
     background-attachment: scroll; /* Evita problemas em mobile */
   }
 }
-.book-cover{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    overflow: hidden;
-    height: 100vh;
-    margin: auto;
-    margin-top: 40px;
-    object-fit: cover;
-    
-}
-.book-cover img{
-    margin-top: 30px;
-    padding: 0;
-    width: 25vw;
-    height: 100vh;
-}
+
+/*Este es el menu navegacion*/
+
 header{
     background-color: rgb(77, 77, 80);
     opacity: 50%;
@@ -70,4 +55,99 @@ header{
     opacity: 100%;
     font-size: 40px;
     font-weight: bold;
+}
+/* Contenido del libro */
+.login-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  margin: auto;
+  position: relative;
+}
+.book-cover img {
+  width: 28vw;
+  height: 100vh;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+}
+/* Aqui controlamos o conteúdo da capa (título + botões) */
+.login-card{
+  position: absolute;
+  top: 10%; /* ajusta para subir/descer o título */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column; /* título e botões empilhados */
+  align-items: center;
+  text-align: center;
+  color: #9B034F;
+  width:50vw;
+}
+/* Título */
+h2 {
+  margin: 0;
+  color: 6b5366;
+  font-size: 3em;
+  line-height: 1.2em;
+  font-family:Arial, Helvetica, sans-serif;
+  margin-bottom:0.5em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    text-align: left;
+    color: #910f70;
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #f093d7;
+    border-radius: 8px;
+    background-color: #e6c0d1;
+}
+
+button {
+    background-color: #ca508d;
+    color:#352e30;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #9b034f;
+}
+
+.mensaje-error {
+    color: red;
+    margin-top: 10px;
+}
+
+
+
+
+
+footer{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ color: white;          /* texto blanco */
+ background: transparent; /* o podés darle un color si querés un fondo */
+ padding: 5px 0;       /* espacio arriba y abajo */
+ margin-top: -2px;
+ right:-1%;
+ position: relative;
 }
