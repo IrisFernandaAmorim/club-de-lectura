@@ -9,36 +9,35 @@ body {
   overflow-x: hidden;
 }
 
-/* back home button */
+/* back home heading */
 .back-home {
-  position: fixed;
-  left: 18px;
-  top: 0px;
-  background: transparent;
+  width: 275px;
+  background-color: #fff;
   padding: 10px 14px;
   border-radius: 8px;
   font-weight: bold;
   text-decoration: none;
   transition: color 0.3s ease;
-  z-index: 1000;
+  margin-left: 10px;
 }
 
-.back-home:hover { 
-  background: transparent;
-  background: rgba(255, 255, 255, 0.4);
- }
+/* back home link */
+.back-home a {
+ color:#504f1b;
+}
 
 /* Container for the open-book layout */
 .book-scene {
   background-image: url('/Assets/vector-libroAbierto-2.png'); /* Use your book image */
+  background-position: center;
+  background-repeat: no-repeat;
   position: relative;
-  width: 1700px;
-  height: 1113px;
-  margin: -50px auto;
+  height: 839px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 
 /* PNG open-book image */
 .book-bg {
@@ -50,7 +49,7 @@ body {
 /* Left and right pages positioned over the PNG */
 .page {
   position: absolute;
-  top: 15%;
+  top: 5%;
   width: 42%;
   display: flex;
   flex-direction: column;
@@ -60,13 +59,13 @@ body {
 
 /* Adjust placement for each page */
 .left-page {
-  left: 15%;
+  left: 19%;
   width: 550px;
 
 }
 
 .right-page {
-  right: 14%;
+  right: 19%;
   width: 550px;
 }
 
