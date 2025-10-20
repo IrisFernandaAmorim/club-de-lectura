@@ -131,14 +131,11 @@ button:hover {
     background-color: #9b034f;
 }
 
-.mensaje-error {
-    color: red;
+#message p{
     margin-top: 10px;
 }
 
-
-
-
+/*Footer*/
 
 footer{
  display: flex;
